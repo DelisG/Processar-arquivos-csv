@@ -47,9 +47,8 @@ Este documento descreve as funções desenvolvidas para manipulação de arquivo
 - **Comportamento:**
   - A função utiliza a API `java.nio.file` para mover o arquivo especificado para o diretório de destino.
   - Caso ocorra uma exceção durante o processo de movimentação do arquivo, o erro é tratado e impresso no fluxo de erro.
-
 ---
-**arquitetura das pastas**
+**3. Arquitetura das pastas**
 ```
 🗂️Processar-arquivos-csv/
 │
