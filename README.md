@@ -1,7 +1,5 @@
 ## Funções de Manipulação de Arquivos
 
----
-
 **Introdução:**
 
 Este documento descreve as funções desenvolvidas para manipulação de arquivos em um ambiente Java, com foco em operações de validação e movimentação de arquivos CSV. As funções aqui documentadas são parte de um sistema backend destinado a processamento e gerenciamento de arquivos de dados.
@@ -48,19 +46,21 @@ Este documento descreve as funções desenvolvidas para manipulação de arquivo
   - A função utiliza a API `java.nio.file` para mover o arquivo especificado para o diretório de destino.
   - Caso ocorra uma exceção durante o processo de movimentação do arquivo, o erro é tratado e impresso no fluxo de erro.
 ---
-**3. Arquitetura das pastas**
+
+## **Arquitetura das Pastas**
+
 ```
 🗂️Processar-arquivos-csv/
 │
 ├── 🗂️src/
-│   └── 📃 Main.java
-│
-├── 🗂️PENDENTES/
-│   └── 📃 dados.csv
-│
-├── 🗂️VALIDADO/       
-│
-└── 🗂️INVALIDADO/     
+│   |  └── 📃 Main.java
+│   |
+|   |── 🗂️PENDENTES/
+│   |   └── 📃 dados.csv
+│   |
+|   ├── 🗂️VALIDADO/       
+|   │
+|   └── 🗂️INVALIDADO/     
 │
 🗂️README.md/ 
 ```
