@@ -1,4 +1,4 @@
-## 📑 Processar arquivos CSV
+## 📑 Processar Arquivos CSV
 
 **Introdução:**
 
@@ -66,4 +66,6 @@ Este documento descreve as funções desenvolvidas para manipulação de arquivo
 ```
 
 
----
+### Observações:
+
+A solução proposta atende aos requisitos do cliente, fornecendo uma ferramenta capaz de receber arquivos de vendas no formato CSV, validá-los quanto à estrutura adequada e inserir os dados na base de dados. A estrutura do sistema permite uma gestão eficiente dos arquivos processados, separando-os em diretórios conforme sua validação.
