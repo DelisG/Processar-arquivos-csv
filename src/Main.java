@@ -29,5 +29,38 @@ public class Main {
                 }
             }
         }
+          private static boolean validarCSV(File arquivo) {
+        try {
+            long linhas = Files.lines(arquivo.toPath()).count();
+
+            if (linhas == 0)
+                return false;
+
+            return Files.lines(arquivo.toPath()).allMatch(line -> line.split("\t").length == 4);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    }
+    
+    private static void moverArquivo(File arquivo, String diretorioDestino) {
+        try {
+            Path origemPath = Paths.get(arquivo.getAbsolutePath());
+            Path destinoPath = Paths.get(diretorioDestino + "/" + arquivo.getName());
+            Files.move(origemPath, destinoPath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private static void moverArquivo(File arquivo, String diretorioDestino) {
+        try {
+            Path origemPath = Paths.get(arquivo.getAbsolutePath());
+            Path destinoPath = Paths.get(diretorioDestino + "/" + arquivo.getName());
+            Files.move(origemPath, destinoPath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
