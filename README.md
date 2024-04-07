@@ -50,6 +50,7 @@ Este documento descreve as funções desenvolvidas para manipulação de arquivo
 
 ---
 **arquitetura das pastas**
+```
 🗂️Processar-arquivos-csv/
 │
 ├── 🗂️src/
@@ -63,7 +64,7 @@ Este documento descreve as funções desenvolvidas para manipulação de arquivo
 └── 🗂️INVALIDADO/     
 │
 🗂️README.md/ 
-
+```
 
 
 ---
